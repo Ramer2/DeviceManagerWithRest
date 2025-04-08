@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DeviceManager.exceptions;
+﻿namespace Devices.exceptions;
 
 public class ConnectionException : Exception
 {

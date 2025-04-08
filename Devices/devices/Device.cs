@@ -1,4 +1,4 @@
-﻿namespace DeviceManager.devices;
+﻿namespace Devices.devices;
 
 /// <summary>
 /// Represents a generic device with basic properties and functionality.

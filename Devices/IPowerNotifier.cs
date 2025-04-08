@@ -1,4 +1,4 @@
-﻿namespace DeviceManager;
+﻿namespace Devices;
 
 /// <summary>
 /// Interface describing a method for notifying the user

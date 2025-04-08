@@ -1,6 +1,6 @@
-﻿using DeviceManager.exceptions;
+﻿using Devices.exceptions;
 
-namespace DeviceManager.devices;
+namespace Devices.devices;
 
 /// <summary>
 /// Represents a smartwatch device with battery management.

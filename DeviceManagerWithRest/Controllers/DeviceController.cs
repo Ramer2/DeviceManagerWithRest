@@ -1,4 +1,4 @@
-﻿using DeviceManager.devices;
+﻿using Devices.devices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DeviceManagerWithRest.Controllers;
@@ -8,4 +8,6 @@ namespace DeviceManagerWithRest.Controllers;
 public class DeviceController : ControllerBase
 {
     private static readonly List<Device> _devices = new();
+    
+    
 }

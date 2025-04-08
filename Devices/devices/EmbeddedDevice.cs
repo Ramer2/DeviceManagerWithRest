@@ -1,8 +1,8 @@
 ﻿using System.Text.RegularExpressions;
-using DeviceManager.exceptions;
-using ArgumentException = DeviceManager.exceptions.ArgumentException;
+using Devices.exceptions;
+using ArgumentException = Devices.exceptions.ArgumentException;
 
-namespace DeviceManager.devices;
+namespace Devices.devices;
 
 /// <summary>
 /// Represents an embedded device with network connectivity.
