@@ -1,4 +1,6 @@
-﻿namespace Devices.devices;
+﻿using System.Text.Json.Serialization;
+
+namespace Devices.devices;
 
 /// <summary>
 /// Represents a generic device with basic properties and functionality.
@@ -23,14 +25,14 @@ public class Device
     /// <summary>
     /// Initializes a new instance of the Device class.
     /// </summary>
-    /// <param name="id">The unique device ID.</param>
-    /// <param name="name">The name of the device.</param>
-    /// <param name="isOn">Indicator for whether the device is initially turned on.</param>
-    public Device(string id, string name, bool isOn)
+    /// <param name="_id">The unique device ID.</param>
+    /// <param name="_name">The name of the device.</param>
+    /// <param name="_isOn">Indicator for whether the device is initially turned on.</param>
+    public Device(string _id, string _name, bool _isOn)
     {
-        _id = id;
-        _name = name;
-        _isOn = isOn;
+        this._id = _id;
+        this._name = _name;
+        this._isOn = _isOn;
     }
     
     /// <summary>

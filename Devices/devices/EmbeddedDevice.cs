@@ -19,20 +19,20 @@ public class EmbeddedDevice : Device
     /// <summary>
     /// Indicator for whether the device is connected to a network.
     /// </summary>
-    public bool _isConnected { get; set; }
+    private bool _isConnected { get; set; }
 
     /// <summary>
     /// Initializes a new instance of the EmbeddedDevice class.
     /// </summary>
-    /// <param name="id">The unique device ID.</param>
-    /// <param name="name">The name of the device.</param>
-    /// <param name="isOn">Indicates whether the device is initially turned on.</param>
-    /// <param name="ip">The IP address of the device.</param>
-    /// <param name="network">The network name.</param>
-    public EmbeddedDevice(string id, string name, bool isOn, string ip, string network) : base(id, name, isOn)
+    /// <param name="_id">The unique device ID.</param>
+    /// <param name="_name">The name of the device.</param>
+    /// <param name="_isOn">Indicates whether the device is initially turned on.</param>
+    /// <param name="_ip">The IP address of the device.</param>
+    /// <param name="_network">The network name.</param>
+    public EmbeddedDevice(string _id, string _name, bool _isOn, string _ip, string _networkName) : base(_id, _name, _isOn)
     {
-        SetIPAddress(ip);
-        _networkName = network;
+        SetIpAddress(_ip);
+        this._networkName = _networkName;
         _isConnected = false;
     }
 
@@ -40,7 +40,7 @@ public class EmbeddedDevice : Device
     /// Sets the IP address of the device.
     /// </summary>
     /// <param name="ip">The new IP address.</param>
-    public void SetIPAddress(string ip)
+    public void SetIpAddress(string ip)
     {
         if (!Regex.IsMatch(ip, @"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$"))
             throw new ArgumentException();

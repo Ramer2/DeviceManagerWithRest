@@ -12,13 +12,13 @@ public class PersonalComputer : Device
     /// <summary>
     /// Initializes a new instance of the PersonalComputer class.
     /// </summary>
-    /// <param name="id">The unique device ID.</param>
-    /// <param name="name">The name of the device.</param>
-    /// <param name="isOn">Indicates whether the device is initially turned on.</param>
-    /// <param name="os">The operating system of the computer.</param>
-    public PersonalComputer(string id, string name, bool isOn, string os) : base(id, name, isOn)
+    /// <param name="_id">The unique device ID.</param>
+    /// <param name="_name">The name of the device.</param>
+    /// <param name="_isOn">Indicates whether the device is initially turned on.</param>
+    /// <param name="_operatingSystem">The operating system of the computer.</param>
+    public PersonalComputer(string _id, string _name, bool _isOn, string _operatingSystem) : base(_id, _name, _isOn)
     {
-        _operatingSystem = os;
+        this._operatingSystem = _operatingSystem;
     }
 
     /// <summary>

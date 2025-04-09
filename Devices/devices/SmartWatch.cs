@@ -7,12 +7,11 @@ namespace Devices.devices;
 /// </summary>
 public class SmartWatch : Device, IPowerNotifier
 {
-    private int _batteryCharge;
     
     /// <summary>
     /// Battery charge percentage.
     /// </summary>
-    public int BatteryCharge
+    public int _batteryCharge
     {
         get => _batteryCharge;
         set
@@ -30,17 +29,13 @@ public class SmartWatch : Device, IPowerNotifier
     /// <summary>
     /// Initializes a new instance of the SmartWatch class.
     /// </summary>
-    /// <param name="id">The unique device ID.</param>
-    /// <param name="name">The name of the device.</param>
-    /// <param name="isOn">Indicates whether the device is initially turned on.</param>
-    /// <param name="batteryCharge">The initial battery charge level.</param>
-    public SmartWatch(string id, string name, bool isOn, int batteryCharge) : base(id, name, isOn)
+    /// <param name="_id">The unique device ID.</param>
+    /// <param name="_name">The name of the device.</param>
+    /// <param name="_isOn">Indicates whether the device is initially turned on.</param>
+    /// <param name="_batteryCharge">The initial battery charge level.</param>
+    public SmartWatch(string _id, string _name, bool _isOn, int _batteryCharge) : base(_id, _name, _isOn)
     {
-        if (batteryCharge < 0 || batteryCharge > 100)
-            throw new ArgumentOutOfRangeException(
-                "Can't set the battery charge to a negative value or to a value greater than 100");
-        
-        _batteryCharge = batteryCharge;
+        this._batteryCharge = _batteryCharge;
     }
     
     /// <summary>
