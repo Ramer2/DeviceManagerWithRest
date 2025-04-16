@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-using Devices.devices;
-using Microsoft.AspNetCore.Http.HttpResults;
+﻿using Devices.devices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DeviceManagerWithRest.Controllers;

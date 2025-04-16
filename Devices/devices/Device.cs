@@ -5,7 +5,7 @@ namespace Devices.devices;
 /// <summary>
 /// Represents a generic device with basic properties and functionality.
 /// </summary>
-public class Device
+public abstract class Device
 {
     /// <summary>
     /// Unique identifier of the device.
